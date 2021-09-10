@@ -1,0 +1,80 @@
+div {
+    padding: 4px;
+    margin: 4px;
+    width: 100%;
+}
+
+#top {
+    text-align: center;
+    font-family: arial;
+    background-color: rgb(114, 218, 183);
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+body {
+    background-color: aquamarine;
+    font-family: sans-serif;
+}
+
+#name {
+    text-align: left;
+    margin-left: 10px;
+    font-family: serif ;
+    font-size: 30px;
+}
+
+#email {
+    text-align: right;
+    margin-right: 20px;
+    font-family: serif;
+    font-size: 20px;
+}
+
+#header {
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgb(114, 218, 183);
+}
+
+table
+{
+    margin-left: 40px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td,th {
+    border: 1px solid black;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+td {
+    text-align: left;
+}
+
+#main {
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.course-name {
+    font-weight: bold;
+}
+
+#mid {
+    margin: 2px;
+    padding: 2px;
+    text-align: left;
+}
