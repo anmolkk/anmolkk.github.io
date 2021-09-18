@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="cv.css">
+
+    <script>
+       function linkedin(){
+        var con = confirm("Are you sure you want to proceed?");
+        if(con){
+            window.location ="https://www.linkedin.com/in/anmol-kumar-a081291b7"
+        }
+       }
+    </script>
 </head>
+
 <body>
+    <div id="top">
+    <h1>Curriculum vitae</h1>
+    </div>
+
+    <header>
+        <div>
+            <p id="name">Anmol</p>
+        
+            <a href="mailto:ak564399@gmail.com" target="_blank">
+                <p  id="email">ak564399@gmail.com</p>
+            </a>
+        </div>
+ 
+    <hr style="border: 0.5px solid black;">
+
+    <div id="main">
+ 
+        <h3 >Educational Qualifications</h3>
     
+    <table>
+        <thead>
+        <tr>
+            <th>Qualification</th>
+            <th>Board</th>
+            <th>Percentage / Grades</th>
+            <th>Year</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>S.S.C</td>
+            <td>P.S.E.B.</td>
+            <td>84.6%</td>
+            <td>2017</td>
+        </tr>
+        <tr>
+            <td>Diploma</td>
+            <td>P.S.B.T.E.</td>
+            <td>69%</td>
+            <td>2020</td>
+        </tr>
+    </table>
+
+    <hr style="border: 0.5px solid black;">
+
+    <h3>Independent Courses</h3>
+    <div id="mid">
+        <ul>
+            <li> <span class="course-name">Python from Basic to Production</span> – Udemy.com</li>
+            <li> <span class="course-name">Basic of Java</span> - Anu-Infotech</li>
+        </ul>
+
+        <hr style="border: 0.5px solid black;">
+
+        <h3>Other Information</h3>
+    <ul>
+        <li>
+            <span class="course-name">Programming Skills:</span> 
+                Python, Basic of Java, HTML, CSS, C++</li>
+        <li>
+            <span class="course-name">
+                Languages Known:
+            </span> English, Hindi and Punjabi</li>
+
+        <li>
+            <span class="course-name">Hobbies:</span>
+            I love reading books and listening music.
+        </li> 
+    </ul>
+    </div>
+
+    <hr style="border: 0.5px solid black;">
+
+    <h3>Declaration</h3>
+    <p>
+        I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief.
+    </p>
+    </div>
+
+    <footer>
+        <p>Thanks for visting my webpage</p>
+            <h4 onclick="linkedin()">view my Linkedin Account</h4>
+    </footer>
+
 </body>
 </html>
