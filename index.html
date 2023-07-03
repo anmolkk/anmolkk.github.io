@@ -1,109 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
-    <link rel="stylesheet" href="cv.css">
-
-    <script>
-       function linkedin(){
-        var con = confirm("Are you sure you want to proceed?");
-        if(con){
-            window.location ="https://www.linkedin.com/in/anmol-kumar-a081291b7"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTRO - ANMOL</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <style>
+        p{
+            margin: 0px;
         }
-       }
-        
-        function mail(){
-            if(confirm("Are you sure to Proceed to mail"){
-               window.location = "mailto:ak564399@gmail.com"
-               }
+      main {
+        width: 98vw;
+        height: 98vh;
+      }
+      .main {
+        min-width: 49vw;
+        min-height: 98vh;
+      }
+      .left {
+        background-color: deepskyblue;
+        float: left;
+      }
+      .right {
+        background-color: orangered;
+      }
+      .heading {
+        font-size: 100px;
+        margin: 0px;
+      }
+      .subtitle {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .sub {
+        top: 40vh;
+        left: 40vw;
+        position: absolute;
+      }
+      .scroll{
+        bottom: 4vh;
+        position: absolute;
+        left: 46vw;
+        text-align: center;
+        padding: 5px;
+      }
+      .scroll-icon{
+        animation-name: scroll-fade;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes scroll-fade{
+        0%{
+            opacity: 1;
         }
-    </script>
-</head>
-
-<body>
-    <div id="top">
-    <h1>Curriculum vitae</h1>
-    </div>
-
-    <header>
+        25%{
+            opacity: 0.5;
+        }
+        50%{
+            opacity: 0.1;
+        }
+        75%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 0.9;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="portfolio.css" >
+  </head>
+  <body>
+    <main>
+      <div class="main left"></div>
+      <div class="main right"></div>
+      <div class="sub">
+        <p class="subtitle">Hi, It's</p>
+        <h1 class="name heading">ANMOL</h1>
+        <p class="subtitle" style="margin-inline: 5vw;">Welcome To My Personal Blog</p>
+      </div>
+      <div class="scroll">
+        <i class="fa fa-angle-double-down fa-2x scroll-icon" ></i>
+        <p class="subtitle">Scroll Down</p>
+      </div>
+      <div >
         <div>
-            <p id="name">Anmol</p>
-        
-            <a onclick="mail()" href="index.html" target="_blank">
-                <p  id="email">ak564399@gmail.com</p>
-            </a>
+            <h2></h2>
         </div>
- 
-    <hr style="border: 0.5px solid black;">
-
-    <div id="main">
- 
-        <h3 >Educational Qualifications</h3>
-    
-    <table>
-        <thead>
-        <tr>
-            <th>Qualification</th>
-            <th>Board</th>
-            <th>Percentage / Grades</th>
-            <th>Year</th>
-        </tr>
-        </thead>
-        <tr>
-            <td>S.S.C</td>
-            <td>P.S.E.B.</td>
-            <td>84.6%</td>
-            <td>2017</td>
-        </tr>
-        <tr>
-            <td>Diploma</td>
-            <td>P.S.B.T.E.</td>
-            <td>69%</td>
-            <td>2020</td>
-        </tr>
-    </table>
-
-    <hr style="border: 0.5px solid black;">
-
-    <h3>Independent Courses</h3>
-    <div id="mid">
-        <ul>
-            <li> <span class="course-name">Python from Basic to Production</span> – Udemy.com</li>
-            <li> <span class="course-name">Basic of Java</span> - Anu-Infotech</li>
-        </ul>
-
-        <hr style="border: 0.5px solid black;">
-
-        <h3>Other Information</h3>
-    <ul>
-        <li>
-            <span class="course-name">Programming Skills:</span> 
-                Python, Basic of Java, HTML, CSS, C++</li>
-        <li>
-            <span class="course-name">
-                Languages Known:
-            </span> English, Hindi and Punjabi</li>
-
-        <li>
-            <span class="course-name">Hobbies:</span>
-            I love reading books and listening music.
-        </li> 
-    </ul>
-    </div>
-
-    <hr style="border: 0.5px solid black;">
-
-    <h3>Declaration</h3>
-    <p>
-        I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief.
-    </p>
-    </div>
-
-    <footer>
-        <p>Thanks for visting my webpage</p>
-            <h4 onclick="linkedin()">view my Linkedin Account</h4>
-    </footer>
-
-</body>
+        <section class="footer">
+            <!-- <div class="footer img"><img src="" alt="" /></div> -->
+          <div class="social">
+            <a href="https://www.instagram.com/instaboy_anmol/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/anmol-a081291b7/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/anmolkk/"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/Anmolkashyap199"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/anmol.kashaup/"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <ul class="list">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="about.html">About Me</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
