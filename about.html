@@ -16,103 +16,63 @@
         display: grid;
         text-align: center;
       }
-      .about {
-        width: 98vw;
-        margin: 10px;
-        overflow: hidden;
-      }
-      .text {
-        text-align: left;
-        width: 57vw;
-        margin-inline: 5px;
-        padding: 1vw;
-      }
-      .img {
-        margin-inline: 5px;
-        width: 35vw;
-        height: 40vh;
-        padding: 1vw;
-      }
-      .title {
-        text-align: center;
-      }
-      .para {
-        font-size: 18px;
-        letter-spacing: 1px;
-        word-spacing: 1.5px;
-        line-height: 22px;
-        padding-inline: 10px;
-      }
-      .servicesimg img {
-        padding: 5px;
-        width: 32vw;
-        height: 30vh;
-      }
       hr {
         width: 96%;
         color: black;
       }
-
-      img{
-      width:35vw;
-      height:40vh;
+      .skills,.hobbies{
+        border: 1px solid black;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .lang,.hobby{
+        background-color: lightgray;
+        margin-inline: 10px;
+        padding: 5px;
+        padding-inline: 15px;
+        border: 1px solid black;
+        border-radius: 10px;
+        float: left;
+      }
+      .lang:hover{
+        background-color: rgb(151, 151, 151);
+        letter-spacing: 1px;
+        transform: scale(0.9);
+        transition: all .2s;
+      }
+      .hobby:hover{
+        background-color:mintcream;
+        letter-spacing: 1px;
+        transform: scale(0.9);
+        transition: all .2s;
       }
     </style>
   </head>
   <body>
     <main>
       <h1>About ANMOL</h1>
-      <p style="text-align: center; margin: 0">
-        You can Know About Me from This Page
-      </p>
+
       <hr />
+      <p>Welcome, My Name is Anmol. I am a Developer. This Portfolio Website showcase a Few of my Works.</p>
       <br />
-      <h2><u>My Achievements</u></h2>
-      <div class="about">
-        <div class="services text" style="float: left">
-          <h2 class="services title">Find Places</h2>
-          <p align="justify" class="services para">
-            At Traveller, We Provide you the Opportunity to look for the Places
-            to plan your Next Vacations. You can Plan Your Next Vacation By
-            Choosing the Best Places Near Delhi from Our Home Page. You can also
-            search for the Places of your Choice from the Search Bar. You can check the Travel Distance from Delhi to that Place. You can Also Rent Bikes in Traveller through our Parter Website.
-          </p>
-        </div>
-        <div class="services img" style="float: right">
-          <img alt="Find Places" src="" />
-        </div>
+      <h2><u>My Skills</u></h2>
+      <div class="skills">
+        <P class="skill lang"><span></span>PYTHON</P>
+        <P class="skill lang"><span></span>DJANGO</P>
+        <P class="skill lang"><span></span>MERN STACK</P>
+        <P class="skill lang"><span></span>REST API</P>
+        <P class="skill lang"><span></span>HTML</P>
+        <P class="skill lang"><span></span>CSS</P>
       </div>
-
-      <div class="about">
-        <div class="book text" style="float: right">
-          <h2 class="book title">Book Hotels</h2>
-          <p align="justify" class="book para">
-            At Traveller, You can Book Hotels with our Local Vendor Support
-            system. You will get a Discount on the Prices By Booking Through out
-            Traveller Website. It will also support the local vendors to grow
-            their Business. You can Check the Available booking In your Account
-            section. You can delete the Booking, If due to some reason, You do not want to continue that booking. 
-          </p>
-        </div>
-        <div class="book img" style="float: left">
-          <img alt="Book Hotel" src="" />
-        </div>
+      <br>
+      <h2><u>My Hobbies</u></h2>
+      <div class="hobbies">
+        <P class="hobby"><span></span>Travelling</P>
+        <P class="hobby"><span></span>Listening Music</P>
+        <P class="hobby"><span></span>Reading Books</P>
       </div>
-      <div class="about">
-        <div class="support text" style="float: left">
-          <h2 class="support title">Enhanced Support</h2>
-          <p align="justify" class="support para">
-            At Traveller, We have Tried Our Best to make your Experience good.
-            You can Contact Us at any time, If you found any Mis-Use or Any other
-            Issue in Our System. Your are Important to Us and we WIll Try to remove all the problems that you are currenlt having with our system. We will be Available for your All the Time. You can Share
-            your Query Through the Contact Page Available to you. You need to Login to share your Issue through contact Page.
-          </p>
-        </div>
-        <div class="support img" style="float: right">
-          <img alt="support" src="" />
-        </div>
-      </div>
-
+<br>
       <section class="footer">
         <!-- <div class="footer img"><img src="" alt="" /></div> -->
       <div class="social">

@@ -26,24 +26,23 @@
         width: 75vw;
         margin-inline: 10px;
       }
-      .title {
-        text-align: center;
-      }
+
       .para {
         font-size: 18px;
         letter-spacing: 1px;
         word-spacing: 1.5px;
         line-height: 22px;
         padding-inline: 10px;
-      }
-      .servicesimg img {
-        padding: 5px;
-        width: 32vw;
-        height: 30vh;
+        display: none;
       }
       hr {
         width: 96%;
         color: black;
+      }
+      .div-title{
+        width: 20vw;
+        float: left;
+        text-align: left;
       }
     </style>
   </head>
@@ -57,21 +56,25 @@
       <br />
       <h2><u>My Projects</u></h2>
       <div class="about">
-        <div class="services text" style="float: left">
-          <h2 class="services title">Hinglish Dictionary</h2>
-          <p align="justify" class="services para">
+        <div class="div-title" style="float: left">
+          <h2 class="title" ><li>Hinglish Dictionary</li></h2>
+        </div>
+        <div class="text" style="float: left;">
+          
+          <p align="justify" class="para">
             Hinglish Dictionary is a Python Django Based Web Dictionary, which is Used to Search for the meaning of Hinglish Word into Particular English Word. This Dictionary has been deployed over the 
             <a href="https://Hinglish.pythonanywhere.com">Web</a>.
             In Hinglish Dictionary, we also Provide suggestion if the searched word is not present in Dictionary. Users can also provide new suggested words.
-            
           </p>
         </div>
       </div>
 
       <div class="about">
-        <div class="book text" style="float: right">
-          <h2 class="book title">Traveller</h2>
-          <p align="justify" class="book para">
+        <div class="div-title" style="float: left;">
+          <h2 class="title"><li>Traveller</li></h2>
+        </div>
+        <div class="text" style="float: left;">
+          <p align="justify" class="para">
             Traveller is a Python Django Based Blog Website to help Travel Lovers.
             At Traveller, We Provide you the Opportunity to look for the Places
             to plan your Next Vacations. You can Plan Your Next Vacation By
@@ -81,9 +84,12 @@
         </div>
       </div>
       <div class="about">
-        <div class="support text" style="float: left">
-          <h2 class="support title">SocialPedia</h2>
-          <p align="justify" class="support para">
+        <div class="div-title" style="float: left;">
+          <h2 class="title" ><li>SocialPedia</li></h2>
+        </div>
+        <div class="text" style="float: left;">
+          
+          <p align="justify" class="para">
             SocialPedia, A MERN Stack Based Social media Website where we can add friends, upload pictures, share posts, and do a lot of things. Anyone can Create their Account in SocialPedia.
             In SocialPedia, you can change light and Dark Mode.
           </p>
@@ -111,5 +117,28 @@
       </ul>
     </section>
     </main>
+    <script>
+      var para = document.getElementsByClassName("para");
+      var title = document.getElementsByClassName("title");
+        function hide(){
+          for(var i=0;i <para.length;i++){
+            para[i].style.display = "None";
+          }
+        }
+        title[0].addEventListener("click", function() {
+          hide()
+          para[0].style.display = "Block";
+        })
+
+        title[1].addEventListener("click", function() {
+          hide()
+          para[1].style.display = "Block";
+        })
+
+        title[2].addEventListener("click", function() {
+          hide()
+          para[2].style.display = "Block";
+        })
+      </script>
   </body>
 </html>
